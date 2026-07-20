@@ -310,6 +310,7 @@ private fun QuizConfigScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun QuizTypeCard(
     title: String,

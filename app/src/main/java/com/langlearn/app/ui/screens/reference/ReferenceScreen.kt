@@ -106,7 +106,7 @@ fun ReferenceScreen(
                 contentColor = MaterialTheme.colorScheme.primary,
                 indicator = { tabPositions ->
                     if (selectedTab < tabPositions.size) {
-                        TabRowDefaults.SecondaryIndicator(
+                        TabRowDefaults.Indicator(
                             modifier = Modifier.tabIndicatorOffset(tabPositions[selectedTab]),
                             color = MaterialTheme.colorScheme.primary
                         )
@@ -228,7 +228,7 @@ private fun AlphabetRow(item: AlphabetEntity) {
         }
     }
 
-    androidx.compose.material3.HorizontalDivider(
+    androidx.compose.material3.Divider(
         thickness = 0.5.dp,
         color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
     )

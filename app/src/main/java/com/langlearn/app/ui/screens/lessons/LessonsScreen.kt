@@ -55,6 +55,7 @@ private val availableLanguages = listOf(
     )
 )
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun LessonsScreen(
     lessonsViewModel: LessonsViewModel = viewModel(factory = LessonsViewModel.Factory),

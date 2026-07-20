@@ -19,7 +19,7 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilterChipDefaults
-import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -138,7 +138,7 @@ fun PhrasebookScreen(
                 ) {
                     items(searchResults, key = { it.id }) { phrase ->
                         PhraseCard(phrase = phrase)
-                        HorizontalDivider(
+                        Divider(
                             thickness = 0.5.dp,
                             color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
                         )
@@ -203,7 +203,7 @@ fun PhrasebookScreen(
                         ) {
                             items(phrases, key = { it.id }) { phrase ->
                                 PhraseCard(phrase = phrase)
-                                HorizontalDivider(
+                                Divider(
                                     thickness = 0.5.dp,
                                     color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
                                 )
@@ -216,6 +216,7 @@ fun PhrasebookScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun CategoryChip(
     category: PhraseCategoryEntity,
