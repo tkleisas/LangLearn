@@ -29,6 +29,9 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
+      - name: Fix gradlew permissions
+        run: chmod +x gradlew
+
       - name: Build release APK
         run: ./gradlew assembleRelease -PversionName=${{ env.VERSION_NAME }}
 
