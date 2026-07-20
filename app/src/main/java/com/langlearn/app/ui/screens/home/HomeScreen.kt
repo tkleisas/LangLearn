@@ -26,6 +26,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
@@ -60,6 +61,7 @@ private val availableLanguages = listOf(
     )
 )
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     homeViewModel: HomeViewModel = viewModel(factory = HomeViewModel.Factory),
@@ -291,13 +293,14 @@ private fun QuickActionButton(
             )
         }
         if (badgeCount > 0) {
+            val errorColor = MaterialTheme.colorScheme.error
             Box(
                 modifier = Modifier
                     .size(28.dp),
                 contentAlignment = Alignment.Center
             ) {
                 androidx.compose.foundation.Canvas(modifier = Modifier.fillMaxSize()) {
-                    drawCircle(color = MaterialTheme.colorScheme.error)
+                    drawCircle(color = errorColor)
                 }
                 Text(
                     text = badgeCount.toString(),
@@ -347,7 +350,7 @@ private fun ProgressSection(
             }
             Spacer(modifier = Modifier.height(8.dp))
             LinearProgressIndicator(
-                progress = { (completedLessons.toFloat() / totalLessons).coerceIn(0f, 1f) },
+                progress = (completedLessons.toFloat() / totalLessons).coerceIn(0f, 1f),
                 modifier = Modifier.fillMaxWidth().height(8.dp),
                 color = MaterialTheme.colorScheme.primary,
                 trackColor = MaterialTheme.colorScheme.surfaceVariant,

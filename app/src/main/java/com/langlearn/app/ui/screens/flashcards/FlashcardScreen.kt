@@ -343,9 +343,6 @@ private fun RatingButton(
         colors = ButtonDefaults.outlinedButtonColors(
             containerColor = containerColor,
             contentColor = contentColor
-        ),
-        border = ButtonDefaults.outlinedButtonBorder(enabled = true).copy(
-            width = 0.dp
         )
     ) {
         Text(

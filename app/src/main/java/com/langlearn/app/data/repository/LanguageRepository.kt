@@ -9,7 +9,7 @@ import kotlinx.coroutines.withContext
 class LanguageRepository(private val db: AppDatabase) {
 
     suspend fun getLanguages(): List<LanguageEntity> = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.query("SELECT * FROM languages", null)
+        val cursor = db.openHelper.readableDatabase.query("SELECT * FROM languages", arrayOf<Any>())
         cursor.use { c ->
             val languages = mutableListOf<LanguageEntity>()
             while (c.moveToNext()) {

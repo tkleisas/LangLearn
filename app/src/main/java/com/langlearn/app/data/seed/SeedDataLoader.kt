@@ -34,7 +34,7 @@ class SeedDataLoader {
     suspend fun loadSeedData(context: Context, database: AppDatabase) {
         withContext(Dispatchers.IO) {
             val db = database.openHelper.writableDatabase
-            val cursor = db.query("SELECT COUNT(*) FROM languages", null)
+            val cursor = db.query("SELECT COUNT(*) FROM languages", arrayOf<Any>())
             var existingCount = 0
             if (cursor.moveToFirst()) {
                 existingCount = cursor.getInt(0)
@@ -72,7 +72,7 @@ class SeedDataLoader {
                 put("name", seed.language.name)
                 put("nativeName", seed.language.nativeName)
             }
-            val languageId = db.insert("languages", null, langValues)
+            val languageId = db.insert("languages", 0, langValues)
 
             seed.vocabulary.forEach { v ->
                 val values = ContentValues().apply {
@@ -83,7 +83,7 @@ class SeedDataLoader {
                     put("partOfSpeech", v.partOfSpeech)
                     put("lessonLevel", v.lessonLevel)
                 }
-                db.insert("vocabulary", null, values)
+                db.insert("vocabulary", 0, values)
             }
 
             val categoryIds = mutableMapOf<Int, Long>()
@@ -92,7 +92,7 @@ class SeedDataLoader {
                     put("name", c.name)
                     put("languageId", languageId)
                 }
-                categoryIds[index] = db.insert("phrase_categories", null, values)
+                categoryIds[index] = db.insert("phrase_categories", 0, values)
             }
 
             seed.phrases.forEach { p ->
@@ -104,7 +104,7 @@ class SeedDataLoader {
                     put("translation", p.translation)
                     put("romanization", p.romanization)
                 }
-                db.insert("phrases", null, values)
+                db.insert("phrases", 0, values)
             }
 
             val ruleIds = mutableMapOf<Int, Long>()
@@ -117,7 +117,7 @@ class SeedDataLoader {
                     put("exampleTranslation", r.exampleTranslation)
                     put("lessonLevel", r.lessonLevel)
                 }
-                ruleIds[index] = db.insert("grammar_rules", null, values)
+                ruleIds[index] = db.insert("grammar_rules", 0, values)
             }
 
             seed.grammarExercises.forEach { e ->
@@ -129,7 +129,7 @@ class SeedDataLoader {
                     put("options", e.options)
                     put("type", e.type)
                 }
-                db.insert("grammar_exercises", null, values)
+                db.insert("grammar_exercises", 0, values)
             }
 
             seed.alphabet.forEach { a ->
@@ -140,7 +140,7 @@ class SeedDataLoader {
                     put("pronunciationHint", a.pronunciationHint)
                     put("isTone", if (a.isTone) 1 else 0)
                 }
-                db.insert("alphabet", null, values)
+                db.insert("alphabet", 0, values)
             }
 
             db.setTransactionSuccessful()
