@@ -17,7 +17,7 @@ class GrammarRepository(private val db: AppDatabase) {
         dao.getExercisesForRule(ruleId)
 
     suspend fun getMaxLevel(languageId: Long): Int = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.rawQuery(
+        val cursor = db.openHelper.readableDatabase.query(
             "SELECT MAX(lessonLevel) FROM grammar_rules WHERE languageId = ?",
             arrayOf(languageId.toString())
         )

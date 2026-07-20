@@ -34,7 +34,7 @@ class SeedDataLoader {
     suspend fun loadSeedData(context: Context, database: AppDatabase) {
         withContext(Dispatchers.IO) {
             val db = database.openHelper.writableDatabase
-            val cursor = db.rawQuery("SELECT COUNT(*) FROM languages", null)
+            val cursor = db.query("SELECT COUNT(*) FROM languages", null)
             var existingCount = 0
             if (cursor.moveToFirst()) {
                 existingCount = cursor.getInt(0)

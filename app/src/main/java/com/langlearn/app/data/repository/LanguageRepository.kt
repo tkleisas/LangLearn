@@ -9,7 +9,7 @@ import kotlinx.coroutines.withContext
 class LanguageRepository(private val db: AppDatabase) {
 
     suspend fun getLanguages(): List<LanguageEntity> = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.rawQuery("SELECT * FROM languages", null)
+        val cursor = db.openHelper.readableDatabase.query("SELECT * FROM languages", null)
         cursor.use { c ->
             val languages = mutableListOf<LanguageEntity>()
             while (c.moveToNext()) {
@@ -20,7 +20,7 @@ class LanguageRepository(private val db: AppDatabase) {
     }
 
     suspend fun getLanguageByCode(code: String): LanguageEntity? = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.rawQuery(
+        val cursor = db.openHelper.readableDatabase.query(
             "SELECT * FROM languages WHERE code = ?",
             arrayOf(code)
         )
@@ -30,7 +30,7 @@ class LanguageRepository(private val db: AppDatabase) {
     }
 
     suspend fun getLanguageById(id: Long): LanguageEntity? = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.rawQuery(
+        val cursor = db.openHelper.readableDatabase.query(
             "SELECT * FROM languages WHERE id = ?",
             arrayOf(id.toString())
         )

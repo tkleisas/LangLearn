@@ -31,7 +31,7 @@ class VocabularyRepository(private val db: AppDatabase) {
         dao.insertAll(words)
 
     suspend fun getMaxLessonLevel(languageId: Long): Int = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.rawQuery(
+        val cursor = db.openHelper.readableDatabase.query(
             "SELECT MAX(lessonLevel) FROM vocabulary WHERE languageId = ?",
             arrayOf(languageId.toString())
         )

@@ -73,7 +73,7 @@ class ReferenceViewModel(
 
     private suspend fun queryAlphabet(languageId: Long): List<AlphabetEntity> = withContext(Dispatchers.IO) {
         val db = LangLearnApp.instance.database
-        val cursor = db.openHelper.readableDatabase.rawQuery(
+        val cursor = db.openHelper.readableDatabase.query(
             "SELECT * FROM alphabet WHERE languageId = ? ORDER BY id",
             arrayOf(languageId.toString())
         )

@@ -26,7 +26,7 @@ class FlashcardRepository(private val db: AppDatabase) {
     }
 
     suspend fun getVocabForReview(reviewId: Long): VocabularyEntity? = withContext(Dispatchers.IO) {
-        val cursor = db.openHelper.readableDatabase.rawQuery(
+        val cursor = db.openHelper.readableDatabase.query(
             """
                 SELECT v.* FROM flashcard_reviews fr
                 INNER JOIN vocabulary v ON fr.vocabularyId = v.id
@@ -54,7 +54,7 @@ class FlashcardRepository(private val db: AppDatabase) {
 
     suspend fun initializeNewWords(languageId: Long, count: Int): List<VocabularyEntity> {
         val db = this.db.openHelper.writableDatabase
-        val cursor = db.rawQuery(
+        val cursor = db.query(
             """
                 SELECT v.* FROM vocabulary v
                 LEFT JOIN flashcard_reviews fr ON v.id = fr.vocabularyId
