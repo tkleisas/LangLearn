@@ -81,14 +81,17 @@ fun VocabularyLessonScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             items(words, key = { it.id }) { word ->
-                WordCard(word = word)
+                WordCard(
+                    word = word,
+                    onSpeak = { vocabularyLessonViewModel.speakWord(word.word) }
+                )
             }
         }
     }
 }
 
 @Composable
-private fun WordCard(word: VocabularyEntity) {
+private fun WordCard(word: VocabularyEntity, onSpeak: () -> Unit = {}) {
     ElevatedCard(
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.elevatedCardElevation(defaultElevation = 2.dp),
@@ -125,7 +128,7 @@ private fun WordCard(word: VocabularyEntity) {
                     }
                 }
 
-                IconButton(onClick = { /* Audio placeholder */ }) {
+                IconButton(onClick = onSpeak) {
                     Icon(
                         imageVector = Icons.Filled.VolumeUp,
                         contentDescription = "Play pronunciation",
