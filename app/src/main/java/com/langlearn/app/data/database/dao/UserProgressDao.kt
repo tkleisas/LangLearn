@@ -19,7 +19,7 @@ interface UserProgressDao {
     fun getProgressForWeek(startDate: String, endDate: String, languageId: Long): Flow<List<UserProgressEntity>>
 
     @Query("SELECT COALESCE(streak, 0) FROM user_progress WHERE languageId = :languageId ORDER BY date DESC LIMIT 1")
-    suspend fun getStreakForDate(date: String, languageId: Long): Int
+    suspend fun getCurrentStreak(languageId: Long): Int
 
     @Upsert
     suspend fun upsert(progress: UserProgressEntity)

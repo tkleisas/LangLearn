@@ -75,7 +75,6 @@ class ProgressRepository(private val db: AppDatabase) {
         dao.getCompletedLessonsCount(languageId, lessonType)
 
     suspend fun getCurrentStreak(languageId: Long): Int {
-        val today = dateFormat.format(Date())
-        return dao.getStreakForDate(today, languageId)
+        return dao.getCurrentStreak(languageId)
     }
 }
