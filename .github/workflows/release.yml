@@ -46,36 +46,29 @@ jobs:
       - name: Fix gradlew permissions
         run: chmod +x gradlew
 
+      - name: Build debug APK
+        run: ./gradlew assembleDebug -PversionName=${{ env.VERSION_NAME }} --build-cache
+
       - name: Build release APK
         run: ./gradlew assembleRelease -PversionName=${{ env.VERSION_NAME }} --build-cache
 
-      - name: Sign APK (if keystore configured)
-        continue-on-error: true
-        uses: r0adkll/sign-android-release@v1
-        id: sign
-        with:
-          releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY_BASE64 }}
-          alias: ${{ secrets.SIGNING_ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-
-      - name: Determine APK path
+      - name: Determine APK paths
         id: apk
         run: |
-          APK=$(find app/build/outputs/apk/release -name "*.apk" | head -1)
-          if [ -z "$APK" ]; then
-            echo "No APK found!"
-            exit 1
-          fi
-          echo "APK_PATH=$APK" >> $GITHUB_OUTPUT
-          echo "Found: $APK"
+          DEBUG_APK=$(find app/build/outputs/apk/debug -name "*.apk" | head -1)
+          RELEASE_APK=$(find app/build/outputs/apk/release -name "*.apk" | head -1)
+          echo "DEBUG_APK=$DEBUG_APK" >> $GITHUB_OUTPUT
+          echo "RELEASE_APK=$RELEASE_APK" >> $GITHUB_OUTPUT
+          echo "Debug APK: $DEBUG_APK"
+          echo "Release APK: $RELEASE_APK"
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
           name: "v${{ env.VERSION_NAME }}"
-          files: ${{ steps.apk.outputs.APK_PATH }}
+          files: |
+            ${{ steps.apk.outputs.DEBUG_APK }}
+            ${{ steps.apk.outputs.RELEASE_APK }}
           generate_release_notes: true
           draft: false
           prerelease: ${{ contains(env.VERSION_NAME, '-') }}
