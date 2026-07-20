@@ -4,6 +4,32 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
+fun getVersionName(): String {
+    val envVersion = project.findProperty("versionName") as? String
+    if (!envVersion.isNullOrBlank()) return envVersion
+
+    return try {
+        val process = ProcessBuilder("git", "describe", "--tags", "--abbrev=0")
+            .directory(rootProject.projectDir)
+            .redirectErrorStream(true)
+            .start()
+        val tag = process.inputStream.bufferedReader().readText().trim().removePrefix("v")
+        if (tag.isNotBlank()) tag else "0.1.0"
+    } catch (_: Exception) {
+        "0.1.0"
+    }
+}
+
+fun getVersionCode(versionName: String): Int {
+    val parts = versionName.split(".").map { it.toIntOrNull() ?: 0 }
+    return (parts.getOrElse(0) { 0 }) * 10000 +
+           (parts.getOrElse(1) { 0 }) * 100 +
+           (parts.getOrElse(2) { 0 })
+}
+
+val appVersionName = getVersionName()
+val appVersionCode = getVersionCode(appVersionName)
+
 android {
     namespace = "com.langlearn.app"
     compileSdk = 34
@@ -12,8 +38,8 @@ android {
         applicationId = "com.langlearn.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = appVersionCode
+        versionName = appVersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
