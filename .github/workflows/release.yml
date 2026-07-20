@@ -26,14 +26,26 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle.kts', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          cache-read-only: ${{ github.ref != 'refs/heads/master' }}
 
       - name: Fix gradlew permissions
         run: chmod +x gradlew
 
       - name: Build release APK
-        run: ./gradlew assembleRelease -PversionName=${{ env.VERSION_NAME }}
+        run: ./gradlew assembleRelease -PversionName=${{ env.VERSION_NAME }} --build-cache
 
       - name: Sign APK (if keystore configured)
         continue-on-error: true
