@@ -1,0 +1,931 @@
+{
+  "language": {
+    "code": "zh",
+    "name": "Chinese",
+    "nativeName": "中文"
+  },
+  "vocabulary": [
+    {
+      "word": "你好",
+      "translation": "Hello",
+      "romanization": "nǐ hǎo",
+      "partOfSpeech": "phrase",
+      "lessonLevel": 1
+    },
+    {
+      "word": "谢谢",
+      "translation": "Thank you",
+      "romanization": "xiè xiè",
+      "partOfSpeech": "phrase",
+      "lessonLevel": 1
+    },
+    {
+      "word": "对不起",
+      "translation": "Sorry",
+      "romanization": "duì bu qǐ",
+      "partOfSpeech": "phrase",
+      "lessonLevel": 1
+    },
+    {
+      "word": "再见",
+      "translation": "Goodbye",
+      "romanization": "zài jiàn",
+      "partOfSpeech": "phrase",
+      "lessonLevel": 1
+    },
+    {
+      "word": "请",
+      "translation": "Please",
+      "romanization": "qǐng",
+      "partOfSpeech": "verb",
+      "lessonLevel": 1
+    },
+    {
+      "word": "是",
+      "translation": "Yes / To be",
+      "romanization": "shì",
+      "partOfSpeech": "verb",
+      "lessonLevel": 1
+    },
+    {
+      "word": "不",
+      "translation": "No / Not",
+      "romanization": "bù",
+      "partOfSpeech": "adverb",
+      "lessonLevel": 1
+    },
+    {
+      "word": "好",
+      "translation": "Good",
+      "romanization": "hǎo",
+      "partOfSpeech": "adjective",
+      "lessonLevel": 1
+    },
+    {
+      "word": "我",
+      "translation": "I / Me",
+      "romanization": "wǒ",
+      "partOfSpeech": "pronoun",
+      "lessonLevel": 1
+    },
+    {
+      "word": "你",
+      "translation": "You",
+      "romanization": "nǐ",
+      "partOfSpeech": "pronoun",
+      "lessonLevel": 1
+    },
+    {
+      "word": "他",
+      "translation": "He / Him",
+      "romanization": "tā",
+      "partOfSpeech": "pronoun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "她",
+      "translation": "She / Her",
+      "romanization": "tā",
+      "partOfSpeech": "pronoun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "我们",
+      "translation": "We / Us",
+      "romanization": "wǒ men",
+      "partOfSpeech": "pronoun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "他们",
+      "translation": "They / Them",
+      "romanization": "tā men",
+      "partOfSpeech": "pronoun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "爸爸",
+      "translation": "Dad",
+      "romanization": "bà ba",
+      "partOfSpeech": "noun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "妈妈",
+      "translation": "Mom",
+      "romanization": "mā ma",
+      "partOfSpeech": "noun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "朋友",
+      "translation": "Friend",
+      "romanization": "péng yǒu",
+      "partOfSpeech": "noun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "先生",
+      "translation": "Mr. / Sir",
+      "romanization": "xiān shēng",
+      "partOfSpeech": "noun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "小姐",
+      "translation": "Miss",
+      "romanization": "xiǎo jiě",
+      "partOfSpeech": "noun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "老师",
+      "translation": "Teacher",
+      "romanization": "lǎo shī",
+      "partOfSpeech": "noun",
+      "lessonLevel": 2
+    },
+    {
+      "word": "水",
+      "translation": "Water",
+      "romanization": "shuǐ",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "茶",
+      "translation": "Tea",
+      "romanization": "chá",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "米饭",
+      "translation": "Rice",
+      "romanization": "mǐ fàn",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "面条",
+      "translation": "Noodles",
+      "romanization": "miàn tiáo",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "肉",
+      "translation": "Meat",
+      "romanization": "ròu",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "菜",
+      "translation": "Vegetables",
+      "romanization": "cài",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "水果",
+      "translation": "Fruit",
+      "romanization": "shuǐ guǒ",
+      "partOfSpeech": "noun",
+      "lessonLevel": 3
+    },
+    {
+      "word": "吃",
+      "translation": "To eat",
+      "romanization": "chī",
+      "partOfSpeech": "verb",
+      "lessonLevel": 3
+    },
+    {
+      "word": "喝",
+      "translation": "To drink",
+      "romanization": "hē",
+      "partOfSpeech": "verb",
+      "lessonLevel": 3
+    },
+    {
+      "word": "好吃",
+      "translation": "Delicious",
+      "romanization": "hǎo chī",
+      "partOfSpeech": "adjective",
+      "lessonLevel": 3
+    },
+    {
+      "word": "家",
+      "translation": "Home",
+      "romanization": "jiā",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "学校",
+      "translation": "School",
+      "romanization": "xué xiào",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "商店",
+      "translation": "Store",
+      "romanization": "shāng diàn",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "医院",
+      "translation": "Hospital",
+      "romanization": "yī yuàn",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "饭店",
+      "translation": "Restaurant",
+      "romanization": "fàn diàn",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "前面",
+      "translation": "Front",
+      "romanization": "qián miàn",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "后面",
+      "translation": "Behind",
+      "romanization": "hòu miàn",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "左边",
+      "translation": "Left",
+      "romanization": "zuǒ biān",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "右边",
+      "translation": "Right",
+      "romanization": "yòu biān",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "这里",
+      "translation": "Here",
+      "romanization": "zhè lǐ",
+      "partOfSpeech": "noun",
+      "lessonLevel": 4
+    },
+    {
+      "word": "去",
+      "translation": "To go",
+      "romanization": "qù",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "来",
+      "translation": "To come",
+      "romanization": "lái",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "看",
+      "translation": "To see / To watch",
+      "romanization": "kàn",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "说",
+      "translation": "To speak",
+      "romanization": "shuō",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "买",
+      "translation": "To buy",
+      "romanization": "mǎi",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "做",
+      "translation": "To do / To make",
+      "romanization": "zuò",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "喜欢",
+      "translation": "To like",
+      "romanization": "xǐ huān",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "知道",
+      "translation": "To know",
+      "romanization": "zhī dào",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "想",
+      "translation": "To want / To think",
+      "romanization": "xiǎng",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "工作",
+      "translation": "To work",
+      "romanization": "gōng zuò",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "学习",
+      "translation": "To study",
+      "romanization": "xué xí",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    },
+    {
+      "word": "帮助",
+      "translation": "To help",
+      "romanization": "bāng zhù",
+      "partOfSpeech": "verb",
+      "lessonLevel": 5
+    }
+  ],
+  "phraseCategories": [
+    { "name": "Greetings" },
+    { "name": "Travel" },
+    { "name": "Food & Dining" },
+    { "name": "Shopping" },
+    { "name": "Emergency" },
+    { "name": "Numbers & Time" },
+    { "name": "Daily Life" },
+    { "name": "Small Talk" }
+  ],
+  "phrases": [
+    {
+      "categoryIndex": 0,
+      "phrase": "你好",
+      "translation": "Hello",
+      "romanization": "nǐ hǎo"
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "早上好",
+      "translation": "Good morning",
+      "romanization": "zǎo shàng hǎo"
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "晚上好",
+      "translation": "Good evening",
+      "romanization": "wǎn shàng hǎo"
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "你叫什么名字？",
+      "translation": "What's your name?",
+      "romanization": "nǐ jiào shén me míng zì"
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "我叫...",
+      "translation": "My name is...",
+      "romanization": "wǒ jiào..."
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "很高兴认识你",
+      "translation": "Nice to meet you",
+      "romanization": "hěn gāo xìng rèn shí nǐ"
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "你好吗？",
+      "translation": "How are you?",
+      "romanization": "nǐ hǎo ma"
+    },
+    {
+      "categoryIndex": 0,
+      "phrase": "我很好",
+      "translation": "I'm fine",
+      "romanization": "wǒ hěn hǎo"
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "请问...在哪里？",
+      "translation": "Excuse me, where is...?",
+      "romanization": "qǐng wèn...zài nǎ lǐ"
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "怎么去...？",
+      "translation": "How do I get to...?",
+      "romanization": "zěn me qù..."
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "多少钱？",
+      "translation": "How much?",
+      "romanization": "duō shǎo qián"
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "我要去...",
+      "translation": "I want to go to...",
+      "romanization": "wǒ yào qù..."
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "火车站",
+      "translation": "Train station",
+      "romanization": "huǒ chē zhàn"
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "飞机场",
+      "translation": "Airport",
+      "romanization": "fēi jī chǎng"
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "酒店",
+      "translation": "Hotel",
+      "romanization": "jiǔ diàn"
+    },
+    {
+      "categoryIndex": 1,
+      "phrase": "公共汽车",
+      "translation": "Bus",
+      "romanization": "gōng gòng qì chē"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "我要点菜",
+      "translation": "I'd like to order",
+      "romanization": "wǒ yào diǎn cài"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "菜单",
+      "translation": "Menu",
+      "romanization": "cài dān"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "这个是什么？",
+      "translation": "What is this?",
+      "romanization": "zhè ge shì shén me"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "买单",
+      "translation": "The bill, please",
+      "romanization": "mǎi dān"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "我不要辣的",
+      "translation": "I don't want spicy",
+      "romanization": "wǒ bú yào là de"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "很好吃",
+      "translation": "Very delicious",
+      "romanization": "hěn hǎo chī"
+    },
+    {
+      "categoryIndex": 2,
+      "phrase": "好吃吗？",
+      "translation": "Is it tasty?",
+      "romanization": "hǎo chī ma"
+    },
+    {
+      "categoryIndex": 3,
+      "phrase": "这个多少钱？",
+      "translation": "How much is this?",
+      "romanization": "zhè ge duō shǎo qián"
+    },
+    {
+      "categoryIndex": 3,
+      "phrase": "太贵了",
+      "translation": "Too expensive",
+      "romanization": "tài guì le"
+    },
+    {
+      "categoryIndex": 3,
+      "phrase": "便宜一点",
+      "translation": "A little cheaper",
+      "romanization": "pián yi yī diǎn"
+    },
+    {
+      "categoryIndex": 3,
+      "phrase": "我可以试试吗？",
+      "translation": "Can I try it?",
+      "romanization": "wǒ kě yǐ shì shì ma"
+    },
+    {
+      "categoryIndex": 3,
+      "phrase": "我要买这个",
+      "translation": "I want to buy this",
+      "romanization": "wǒ yào mǎi zhè ge"
+    },
+    {
+      "categoryIndex": 3,
+      "phrase": "有...吗？",
+      "translation": "Do you have...?",
+      "romanization": "yǒu...ma"
+    },
+    {
+      "categoryIndex": 4,
+      "phrase": "救命！",
+      "translation": "Help!",
+      "romanization": "jiù mìng"
+    },
+    {
+      "categoryIndex": 4,
+      "phrase": "我需要医生",
+      "translation": "I need a doctor",
+      "romanization": "wǒ xū yào yī shēng"
+    },
+    {
+      "categoryIndex": 4,
+      "phrase": "我迷路了",
+      "translation": "I'm lost",
+      "romanization": "wǒ mí lù le"
+    },
+    {
+      "categoryIndex": 4,
+      "phrase": "打电话报警",
+      "translation": "Call the police",
+      "romanization": "dǎ diàn huà bào jǐng"
+    },
+    {
+      "categoryIndex": 4,
+      "phrase": "我病了",
+      "translation": "I'm sick",
+      "romanization": "wǒ bìng le"
+    },
+    {
+      "categoryIndex": 5,
+      "phrase": "今天",
+      "translation": "Today",
+      "romanization": "jīn tiān"
+    },
+    {
+      "categoryIndex": 5,
+      "phrase": "明天",
+      "translation": "Tomorrow",
+      "romanization": "míng tiān"
+    },
+    {
+      "categoryIndex": 5,
+      "phrase": "昨天",
+      "translation": "Yesterday",
+      "romanization": "zuó tiān"
+    },
+    {
+      "categoryIndex": 5,
+      "phrase": "现在几点？",
+      "translation": "What time is it?",
+      "romanization": "xiàn zài jǐ diǎn"
+    },
+    {
+      "categoryIndex": 5,
+      "phrase": "上午",
+      "translation": "Morning / AM",
+      "romanization": "shàng wǔ"
+    },
+    {
+      "categoryIndex": 5,
+      "phrase": "下午",
+      "translation": "Afternoon / PM",
+      "romanization": "xià wǔ"
+    },
+    {
+      "categoryIndex": 6,
+      "phrase": "我要去上班",
+      "translation": "I'm going to work",
+      "romanization": "wǒ yào qù shàng bān"
+    },
+    {
+      "categoryIndex": 6,
+      "phrase": "洗手间在哪里？",
+      "translation": "Where is the bathroom?",
+      "romanization": "xǐ shǒu jiān zài nǎ lǐ"
+    },
+    {
+      "categoryIndex": 6,
+      "phrase": "我可以...吗？",
+      "translation": "May I...?",
+      "romanization": "wǒ kě yǐ...ma"
+    },
+    {
+      "categoryIndex": 6,
+      "phrase": "我不明白",
+      "translation": "I don't understand",
+      "romanization": "wǒ bù míng bái"
+    },
+    {
+      "categoryIndex": 6,
+      "phrase": "请说慢一点",
+      "translation": "Please speak slower",
+      "romanization": "qǐng shuō màn yī diǎn"
+    },
+    {
+      "categoryIndex": 7,
+      "phrase": "你是哪国人？",
+      "translation": "What country are you from?",
+      "romanization": "nǐ shì nǎ guó rén"
+    },
+    {
+      "categoryIndex": 7,
+      "phrase": "你做什么工作？",
+      "translation": "What do you do?",
+      "romanization": "nǐ zuò shén me gōng zuò"
+    },
+    {
+      "categoryIndex": 7,
+      "phrase": "天气很好",
+      "translation": "The weather is nice",
+      "romanization": "tiān qì hěn hǎo"
+    },
+    {
+      "categoryIndex": 7,
+      "phrase": "你多大？",
+      "translation": "How old are you?",
+      "romanization": "nǐ duō dà"
+    },
+    {
+      "categoryIndex": 7,
+      "phrase": "你喜欢...吗？",
+      "translation": "Do you like...?",
+      "romanization": "nǐ xǐ huān...ma"
+    }
+  ],
+  "grammarRules": [
+    {
+      "title": "Basic Sentence Structure (SVO)",
+      "explanation": "Chinese follows Subject-Verb-Object (SVO) structure, same as English. The subject comes first, followed by the verb, then the object.",
+      "example": "我喝茶",
+      "exampleTranslation": "I drink tea",
+      "lessonLevel": 1
+    },
+    {
+      "title": "Question Particle 吗 (ma)",
+      "explanation": "Add 吗 (ma) at the end of a statement to turn it into a yes/no question. No change in word order is needed.",
+      "example": "你好吗？",
+      "exampleTranslation": "Are you good? / How are you?",
+      "lessonLevel": 1
+    },
+    {
+      "title": "Measure Words",
+      "explanation": "Chinese uses measure words (classifiers) between numbers and nouns. Different nouns use different measure words. The most common is 个 (ge) for people and general objects.",
+      "example": "三个人",
+      "exampleTranslation": "Three people (three + MW + people)",
+      "lessonLevel": 2
+    },
+    {
+      "title": "的 (de) - Possessive Particle",
+      "explanation": "的 (de) is placed between a noun/pronoun and another noun to indicate possession, similar to 's or 'of' in English. Pattern: Owner + 的 + Thing.",
+      "example": "我的书",
+      "exampleTranslation": "My book (I + possessive + book)",
+      "lessonLevel": 2
+    },
+    {
+      "title": "了 (le) - Completed Action",
+      "explanation": "了 (le) is placed after a verb to indicate that an action has been completed or a state has changed. It marks the perfective aspect.",
+      "example": "我吃了",
+      "exampleTranslation": "I ate (I + eat + completed action)",
+      "lessonLevel": 3
+    }
+  ],
+  "grammarExercises": [
+    {
+      "grammarRuleIndex": 0,
+      "question": "Choose the correct verb: 我 ___ 去学校 (I want to go to school)",
+      "correctAnswer": "想",
+      "options": "[\"想\", \"是\", \"要\", \"有\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 0,
+      "question": "Choose the correct verb: 她 ___ 水 (She drinks water)",
+      "correctAnswer": "喝",
+      "options": "[\"喝\", \"吃\", \"看\", \"说\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 0,
+      "question": "Fill in the blank: 他 ___ 米饭 (He eats rice)",
+      "correctAnswer": "吃",
+      "options": "[]",
+      "type": "fill_blank"
+    },
+    {
+      "grammarRuleIndex": 1,
+      "question": "Fill in the blank to make a question: 你好 ___ ？",
+      "correctAnswer": "吗",
+      "options": "[]",
+      "type": "fill_blank"
+    },
+    {
+      "grammarRuleIndex": 1,
+      "question": "Which particle turns a statement into a yes/no question?",
+      "correctAnswer": "吗",
+      "options": "[\"的\", \"了\", \"吗\", \"不\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 1,
+      "question": "Choose the correct particle: 他是老师 ___ ？(Is he a teacher?)",
+      "correctAnswer": "吗",
+      "options": "[\"吗\", \"的\", \"了\", \"不\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 2,
+      "question": "Choose the correct measure word: 三 ___ 人 (Three people)",
+      "correctAnswer": "个",
+      "options": "[\"个\", \"本\", \"只\", \"条\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 2,
+      "question": "Fill in the blank with the correct measure word: 一 ___ 苹果 (One apple)",
+      "correctAnswer": "个",
+      "options": "[]",
+      "type": "fill_blank"
+    },
+    {
+      "grammarRuleIndex": 2,
+      "question": "Choose the correct measure word for books: 两 ___ 书 (Two books)",
+      "correctAnswer": "本",
+      "options": "[\"本\", \"个\", \"只\", \"张\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 3,
+      "question": "Choose the correct possessive particle: 我 ___ 朋友 (My friend)",
+      "correctAnswer": "的",
+      "options": "[\"的\", \"了\", \"吗\", \"不\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 3,
+      "question": "Fill in the blank: 她 ___ 名字 (Her name)",
+      "correctAnswer": "的",
+      "options": "[]",
+      "type": "fill_blank"
+    },
+    {
+      "grammarRuleIndex": 4,
+      "question": "Choose the correct particle for a completed action: 我吃 ___ (I ate)",
+      "correctAnswer": "了",
+      "options": "[\"的\", \"了\", \"吗\", \"不\"]",
+      "type": "multiple_choice"
+    },
+    {
+      "grammarRuleIndex": 4,
+      "question": "Fill in the blank: 他去 ___ 学校 (He went to school)",
+      "correctAnswer": "了",
+      "options": "[]",
+      "type": "fill_blank"
+    }
+  ],
+  "alphabet": [
+    {
+      "character": "一",
+      "romanization": "yī",
+      "pronunciationHint": "High level tone (1st)",
+      "isTone": false
+    },
+    {
+      "character": "人",
+      "romanization": "rén",
+      "pronunciationHint": "Rising tone (2nd)",
+      "isTone": false
+    },
+    {
+      "character": "大",
+      "romanization": "dà",
+      "pronunciationHint": "Falling tone (4th)",
+      "isTone": false
+    },
+    {
+      "character": "口",
+      "romanization": "kǒu",
+      "pronunciationHint": "Dipping tone (3rd)",
+      "isTone": false
+    },
+    {
+      "character": "日",
+      "romanization": "rì",
+      "pronunciationHint": "Sun, day",
+      "isTone": false
+    },
+    {
+      "character": "月",
+      "romanization": "yuè",
+      "pronunciationHint": "Moon, month",
+      "isTone": false
+    },
+    {
+      "character": "山",
+      "romanization": "shān",
+      "pronunciationHint": "Mountain",
+      "isTone": false
+    },
+    {
+      "character": "水",
+      "romanization": "shuǐ",
+      "pronunciationHint": "Water",
+      "isTone": false
+    },
+    {
+      "character": "火",
+      "romanization": "huǒ",
+      "pronunciationHint": "Fire",
+      "isTone": false
+    },
+    {
+      "character": "木",
+      "romanization": "mù",
+      "pronunciationHint": "Wood, tree",
+      "isTone": false
+    },
+    {
+      "character": "金",
+      "romanization": "jīn",
+      "pronunciationHint": "Gold, metal",
+      "isTone": false
+    },
+    {
+      "character": "土",
+      "romanization": "tǔ",
+      "pronunciationHint": "Earth, soil",
+      "isTone": false
+    },
+    {
+      "character": "女",
+      "romanization": "nǚ",
+      "pronunciationHint": "Woman, female",
+      "isTone": false
+    },
+    {
+      "character": "子",
+      "romanization": "zǐ",
+      "pronunciationHint": "Child",
+      "isTone": false
+    },
+    {
+      "character": "好",
+      "romanization": "hǎo",
+      "pronunciationHint": "Good (woman + child)",
+      "isTone": false
+    },
+    {
+      "character": "ā",
+      "romanization": "ā",
+      "pronunciationHint": "High level tone \u2014 flat",
+      "isTone": true
+    },
+    {
+      "character": "á",
+      "romanization": "á",
+      "pronunciationHint": "Rising tone \u2014 like asking a question",
+      "isTone": true
+    },
+    {
+      "character": "ǎ",
+      "romanization": "ǎ",
+      "pronunciationHint": "Low dipping tone \u2014 goes down then up",
+      "isTone": true
+    },
+    {
+      "character": "à",
+      "romanization": "à",
+      "pronunciationHint": "Falling tone \u2014 sharp and forceful",
+      "isTone": true
+    }
+  ]
+}
